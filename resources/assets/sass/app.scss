@@ -1,0 +1,68 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+#chat {
+  .messages {
+    height: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow: auto;
+
+    div:nth-child(2n+1) .message {
+      background: #f5f5f5;
+    }
+
+    .message {
+      padding: 5px;
+      border-radius: 2px;
+      margin-bottom: 0;
+
+      &.privateMsg {
+        background: rgba(255, 255, 0, 0.4) !important;
+      }
+
+      &.myMsg {
+        background: rgba(0, 128, 0, 0.19) !important;
+      }
+
+      & a {
+        font-weight: bold;
+      }
+
+      &:hover .remove-msg {
+        display: block;
+      }
+    }
+  }
+}
+
+.notifications {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99999;
+}
+
+header {
+  padding-bottom: 2em;
+}
+
+a.active {
+  color: #23527c;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.remove {
+  float: right;
+  //color: $alert-danger-text;
+  display: none;
+  &:hover {
+    color: $alert-danger-text;
+  }
+}
+
+.remove-room {
+  display: block;
+}
+
