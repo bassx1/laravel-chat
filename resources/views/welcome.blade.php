@@ -17,7 +17,7 @@
 
         <header class="row">
             <div class="col-xs-9">
-                <h1>Awesome Chat</h1>
+                <h1>Awesome Laravel + Vue.js chat</h1>
             </div>
             <div class="col-xs-3">
                 <br>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <div class="input-group">
+                    <div class="input-group _msg">
                     <input type="text"
                            class="form-control"
                            placeholder="Сообщение"
